@@ -15,14 +15,14 @@ Packages required ::
 	-> [ nano ]
 
 [ rofi ]
-[ polybar ]
+[ polybar (AUR) ]
 [ xdotool ]
 [ yad ]
-[ ttf-material-icons-git ]
-[ picom-rounded-corners ]
+[ ttf-material-icons-git (AUR) ]
+[ picom-rounded-corners  (AUR) ]
 [ unclutter ]
 [ ntfs-3g ]
-[ micro ]
+[ micro (AUR) ]
 
 Commands ::
 
