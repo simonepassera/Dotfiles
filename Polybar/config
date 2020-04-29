@@ -49,9 +49,9 @@ font-0 = Cantarell::weight=bold:antialias=true:pixelsize=10;3
 font-1 = Material Icons:antialias=true:size=11;3
 
 modules-left = powermenu i3
-modules-center = popup-calendar 
+modules-center = popup-calendar
 modules-right = cpu memory temperature backlight pulseaudio battery night-shift wlan
- 
+
 tray-padding = 0
 
 [module/xwindow]
@@ -115,7 +115,7 @@ label-visible-padding = ${self.label-focused-padding}
 [module/night-shift]
 type = custom/script
 exec = ~/.config/polybar/nightshift.sh
-interval = 5 
+interval = 5
 click-left = .config/polybar/toggle-nightlight.sh
 
 [module/cpu]
@@ -222,7 +222,7 @@ label-open-foreground = ${colors.foreground}
 
 label-close = "cancel "
 label-close-foreground = ${colors.primary}
-label-separator = | 
+label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 label-close-padding-left = 1
 

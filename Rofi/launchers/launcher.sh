@@ -9,7 +9,6 @@
 #
 # >> Edit these files and uncomment the desired colors/style.
 #
-#     
 # style_normal_grid -- style_normal_grid_round  -- style_normal_grid_full -- style_normal_grid_full_round
 # style_normal_purple_alt
 
