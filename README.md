@@ -16,6 +16,7 @@ Packages required ::
 
 [ rofi ]
 [ polybar (AUR) ]
+[ gnome-screensaver ]
 [ xdotool ]
 [ yad ]
 [ ttf-material-icons-git (AUR) ]

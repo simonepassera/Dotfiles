@@ -229,7 +229,9 @@ label-close-padding-left = 1
 
 menu-0-0 = logout
 menu-0-0-exec = gnome-session-quit --logout --no-prompt
-menu-0-1 = reboot
-menu-0-1-exec = reboot
-menu-0-2 = poweroff
-menu-0-2-exec = poweroff
+menu-0-1 = lock
+menu-0-1-exec = gnome-screensaver-command --lock
+menu-0-2 = reboot
+menu-0-2-exec = reboot
+menu-0-3 = poweroff
+menu-0-3-exec = poweroff

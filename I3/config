@@ -112,9 +112,6 @@ bindsym $mod+Shift+t exec --no-startup-id picom -b
 # Enable popup during fullscreen
 popup_during_fullscreen smart
 
-# lock the screen
-#bindsym $mod+Escape exec gnome-screensaver-command --lock
-
 # exit i3 (logs you out of your X session)
 # bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
