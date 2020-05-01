@@ -6,8 +6,8 @@
 
 ## Installation requirements
 
-- [gnome](https://www.archlinux.org/groups/x86_64/gnome/) (gdm | gsd-xsettings)
-- [gnome-extra](https://www.archlinux.org/groups/x86_64/gnome-extra/) (gnome-tweaks | gnome-usage | dconf-editor )
+- [gnome](https://www.archlinux.org/groups/x86_64/gnome/) ( gdm | gsd-xsettings )
+- [gnome-extra](https://www.archlinux.org/groups/x86_64/gnome-extra/) ( gnome-tweaks | gnome-usage | dconf-editor )
 - [gnome-flashback](https://www.archlinux.org/packages/community/x86_64/gnome-flashback/)
 - [polkit-gnome](https://www.archlinux.org/packages/community/x86_64/polkit-gnome/)
 - [i3-gaps](https://www.archlinux.org/packages/community/x86_64/i3-gaps/)
