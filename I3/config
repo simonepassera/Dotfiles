@@ -112,6 +112,9 @@ bindsym $mod+Shift+t exec --no-startup-id picom -b
 # Enable popup during fullscreen
 popup_during_fullscreen smart
 
+# Load saved layout
+#bindsym $mod+a exec ~/.config/i3/load-layout.sh
+
 # exit i3 (logs you out of your X session)
 # bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
@@ -134,6 +137,7 @@ bindsym $mod+r mode "resize"
 exec --no-startup-id /usr/lib/gsd-xsettings
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id gnome-flashback
+exec --no-startup-id ~/.config/polybar/temperature.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id picom -b
 exec --no-startup-id /usr/bin/unclutter -b

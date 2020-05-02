@@ -195,10 +195,9 @@ animation-charging-framerate = 750
 
 [module/temperature]
 type = internal/temperature
-thermal-zone = 0
 interval = 10
 warn-temperature = 60
-hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon3/temp1_input
+hwmon-path = /home/simo/.config/polybar/temp
 
 format = <ramp> <label>
 format-underline = #f50a4d
