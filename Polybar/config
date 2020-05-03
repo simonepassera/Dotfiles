@@ -115,7 +115,7 @@ label-visible-padding = ${self.label-focused-padding}
 [module/night-shift]
 type = custom/script
 exec = ~/.config/polybar/nightshift.sh
-interval = 5
+interval = 2
 click-left = .config/polybar/toggle-nightlight.sh
 
 [module/cpu]
@@ -195,7 +195,7 @@ animation-charging-framerate = 750
 
 [module/temperature]
 type = internal/temperature
-interval = 10
+interval = 2
 warn-temperature = 60
 hwmon-path = /home/simo/.config/polybar/temp
 
