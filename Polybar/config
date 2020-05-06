@@ -1,4 +1,5 @@
 [colors]
+
 background = #00000000
 background-alt = #444
 foreground = #f9f9f9
@@ -8,19 +9,17 @@ secondary = #e60053
 alert = #bd2c40
 
 [settings]
+
 screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
 pseudo-transparency = true
 
 [global/wm]
+
 margin-top = 5
 margin-bottom = 5
 
 [bar/mybar]
-;monitor = ${env:MONITOR:HDMI-A-0}
+
 width = 100%
 height = 40
 offset-x = 0
@@ -55,23 +54,16 @@ modules-right = cpu memory temperature backlight pulseaudio battery night-shift 
 tray-padding = 0
 
 [module/xwindow]
+
 type = internal/xwindow
 label = %title:0:80:...%
 
-#[module/logout]
-#type = custom/text
-#content = ""
-#content-margin = "0"
-#;content-background = ${colors.background-alt}
-#content-foreground = ${colors.foreground}
-#click-left = /usr/bin/gnome-session-quit --logout --no-prompt
-
 [module/bspwm]
+
 type = internal/bspwm
 
 label-focused = %index%
 label-focused-background = ${colors.background}
-label-focused-underline = ${colors.alert}
 label-focused-padding = 5
 
 label-occupied = %index%
@@ -86,6 +78,7 @@ label-empty-foreground = ${colors.alert}
 label-empty-padding = 5
 
 [module/i3]
+
 type = internal/i3
 format = <label-state> <label-mode>
 index-sort = true
@@ -96,7 +89,6 @@ label-mode-background = ${colors.primary}
 
 label-focused = %index%
 label-focused-background = ${module/bspwm.label-focused-background}
-label-focused-underline = ${module/bspwm.label-focused-underline}
 label-focused-padding = ${module/bspwm.label-focused-padding}
 
 label-unfocused = %index%
@@ -109,84 +101,95 @@ label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
 label-visible = %index%
 label-visible-background = ${self.label-focused-background}
-label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 [module/night-shift]
+
 type = custom/script
 exec = ~/.config/polybar/nightshift.sh
 interval = 2
 click-left = .config/polybar/toggle-nightlight.sh
 
 [module/cpu]
+
 type = internal/cpu
 interval = 2
-format-prefix = "CPU  "
+format-prefix = "CPU "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #f90000
 label = %percentage%%
 
 [module/backlight]
+
 type = internal/backlight
 card = amdgpu_bl0
-format-prefix = "LUX  "
+format-prefix = "LUX "
 format-prefix-foreground = ${colors.foreground-alt}
 
 [module/memory]
+
 type = internal/memory
 interval = 2
-format-prefix = "RAM  "
+format-prefix = "RAM "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #4bffdc
 label = %percentage_used%%
 
 [module/wlan]
+
 type = internal/network
 interface = wlp2s0
 interval = 3.0
+
 format-connected = <label-connected>
-format-connected-underline = #9f78e1
-format-disconnected-underline = ${self.format-connected-underline}
+format-disconnected = <label-disconnected>
+
 label-connected = ""
-#label-connected = ONLINE
 label-connected-foreground = ${colors.foreground}
 label-disconnected = ""
 label-disconnected-foreground = ${colors.foreground-alt}
+
 ramp-signal-0 = LINE
 ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/popup-calendar]
+
 type = custom/script
 exec = ~/.config/polybar/popup-calendar.sh
 interval = 1
 click-left = ~/.config/polybar/popup-calendar.sh --popup &
 
 [module/pulseaudio]
+
 type = internal/pulseaudio
 sink = alsa_output.pci-0000_03_00.6.analog-stereo
+
 format-volume = VOL <label-volume>
 format-volume-foreground = ${colors.foreground-alt}
-label-volume = " %percentage%%"
+label-volume = "%percentage%%"
 label-volume-foreground = ${colors.foreground}
 label-muted = "MUTED"
 label-muted-foreground = ${colors.foreground-alt}
 
 [module/battery]
+
 type = internal/battery
 battery = BAT1
 full-at = 98
 
-format-charging = <animation-charging>+<label-charging>
-format-charging-underline = #ffb52a
-
+format-charging = <animation-charging> +<label-charging>
 format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = "BAT "
-format-full-prefix-foreground = ${colors.foreground-alt}
-format-full-underline = ${self.format-charging-underline}
+ramp-capacity-0 = "BAT"
+ramp-capacity-1 = "BAT"
+ramp-capacity-2 = "BAT"
+ramp-capacity-3 = "BAT"
+ramp-capacity-4 = "BAT"
+ramp-capacity-5 = "BAT"
+ramp-capacity-6 = "BAT"
+ramp-capacity-7 = "BAT"
+ramp-capacity-8 = "BAT"
+ramp-capacity-9 = "BAT"
 
-ramp-capacity-0 = "BAT "
+ramp-capacity-0-foreground = ${colors.secondary}
 ramp-capacity-foreground = ${colors.foreground-alt}
 
 animation-charging-0 = "BAT "
@@ -194,31 +197,30 @@ animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
 [module/temperature]
+
 type = internal/temperature
 interval = 2
 warn-temperature = 60
 hwmon-path = /home/simo/.config/polybar/temp
 
 format = <ramp> <label>
-format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
 
 label = %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
-ramp-0 = "TMP "
+ramp-0 = "TMP"
 ramp-foreground = ${colors.foreground-alt}
 
 [module/powermenu]
+
 type = custom/menu
 format-spacing = 4
 
 label-open =""
 label-open-padding = 0
 label-open-foreground = ${colors.foreground}
-;label-open-background = ${colors.background-alt}
 
 label-close = "cancel "
 label-close-foreground = ${colors.primary}
