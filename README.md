@@ -25,6 +25,8 @@
 - [ttf-material-icons-git (AUR)](https://aur.archlinux.org/packages/ttf-material-icons-git/)
 - [ntfs-3g](https://www.archlinux.org/packages/extra/x86_64/ntfs-3g/)
 - [unclutter](https://www.archlinux.org/packages/community/x86_64/unclutter/)
+- [yaru-icon-theme (AUR)](https://aur.archlinux.org/packages/yaru-icon-theme/)
+- [yay (AUR)](https://aur.archlinux.org/packages/yay/)
 
 
 ## Install the config files
