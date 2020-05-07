@@ -17,12 +17,14 @@
 - [micro (AUR)](https://aur.archlinux.org/packages/micro/)
 - [rofi](https://www.archlinux.org/packages/community/x86_64/rofi/)
 - [polybar (AUR)](https://aur.archlinux.org/packages/polybar/)
+- [gucharmap](https://www.archlinux.org/packages/extra/x86_64/gucharmap/)
 - [picom-rounded-corners (AUR)](https://aur.archlinux.org/packages/picom-rounded-corners/)
 - [gnome-screensaver](https://www.archlinux.org/packages/community/x86_64/gnome-screensaver/)
 - [xdotool](https://www.archlinux.org/packages/community/x86_64/xdotool/)
 - [yad](https://www.archlinux.org/packages/community/x86_64/yad/)
 - [ttf-material-icons-git (AUR)](https://aur.archlinux.org/packages/ttf-material-icons-git/)
 - [ntfs-3g](https://www.archlinux.org/packages/extra/x86_64/ntfs-3g/)
+- [unclutter](https://www.archlinux.org/packages/community/x86_64/unclutter/)
 
 
 ## Install the config files
@@ -38,3 +40,17 @@ cd Dotfiles
 gsettings set org.gnome.gnome-flashback desktop false
 gsettings set org.gnome.gnome-flashback root-background true
 ```
+
+## Applications
+
+- [gitkraken (AUR)](https://aur.archlinux.org/packages/gitkraken/)
+- [google-chrome-stable (AUR)](https://aur.archlinux.org/packages/google-chrome/)
+- [telegram-desktop](https://www.archlinux.org/packages/community/x86_64/telegram-desktop/)
+- [mailspring (AUR)](https://aur.archlinux.org/packages/mailspring/)
+- [spotify (AUR)](https://aur.archlinux.org/packages/spotify/)
+- [firefox](https://www.archlinux.org/packages/extra/x86_64/firefox/)
+- [htop](https://www.archlinux.org/packages/extra/x86_64/htop/)
+- [bashtop-git (AUR)](https://aur.archlinux.org/packages/bashtop-git/)
+- [texmaker](https://www.archlinux.org/packages/community/x86_64/texmaker/)
+- [libreoffice](https://www.archlinux.org/packages/extra/x86_64/libreoffice-still/)
+- [atom](https://www.archlinux.org/packages/community/x86_64/atom/)
