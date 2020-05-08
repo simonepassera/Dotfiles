@@ -53,6 +53,6 @@ gsettings set org.gnome.gnome-flashback root-background true
 - [firefox](https://www.archlinux.org/packages/extra/x86_64/firefox/)
 - [htop](https://www.archlinux.org/packages/extra/x86_64/htop/)
 - [bashtop-git (AUR)](https://aur.archlinux.org/packages/bashtop-git/)
-- [texmaker](https://www.archlinux.org/packages/community/x86_64/texmaker/)
+- [texmaker](https://www.archlinux.org/packages/community/x86_64/texmaker/) ([texlive-most](https://www.archlinux.org/groups/x86_64/texlive-most/))
 - [libreoffice](https://www.archlinux.org/packages/extra/x86_64/libreoffice-still/)
 - [atom](https://www.archlinux.org/packages/community/x86_64/atom/)
