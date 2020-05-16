@@ -90,30 +90,26 @@ bindsym $mod+Shift+3 move container to workspace number $ws3
 bindsym $mod+Shift+4 move container to workspace number $ws4
 bindsym $mod+Shift+5 move container to workspace number $ws5
 
-gaps inner 35
+gaps inner 30
 gaps outer 5
 gaps top -20
 
 # change gaps interactively
-bindsym $mod+minus gaps inner current minus 6
-bindsym $mod+plus gaps inner current plus 6
+bindsym $mod+minus gaps inner current minus 5
+bindsym $mod+plus gaps inner current plus 5
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+
+# picom
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Shift+t exec --no-startup-id picom -b
 
-# Logout of session
-#bindsym $mod+Shift+e exec /usr/bin/gnome-session-quit --logout
-
 # Enable popup during fullscreen
 popup_during_fullscreen smart
-
-# Load saved layout
-#bindsym $mod+a exec ~/.config/i3/load-layout.sh
 
 # exit i3 (logs you out of your X session)
 # bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
