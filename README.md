@@ -48,7 +48,7 @@ gsettings set org.gnome.gnome-flashback root-background true
 - [gitkraken (AUR)](https://aur.archlinux.org/packages/gitkraken/)
 - [google-chrome-stable (AUR)](https://aur.archlinux.org/packages/google-chrome/)
 - [telegram-desktop](https://www.archlinux.org/packages/community/x86_64/telegram-desktop/)
-- [dropbox](https://aur.archlinux.org/packages/dropbox/)
+- [dropbox (AUR)](https://aur.archlinux.org/packages/dropbox/)
 - [mailspring (AUR)](https://aur.archlinux.org/packages/mailspring/)
 - [spotify (AUR)](https://aur.archlinux.org/packages/spotify/)
 - [firefox](https://www.archlinux.org/packages/extra/x86_64/firefox/)
