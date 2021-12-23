@@ -33,6 +33,7 @@ floating_modifier $mod
 
 # start apps
 bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Shift+Return exec gnome-terminal --working-directory=$(xcwd)
 bindsym $mod+e exec nautilus -w
 bindsym $mod+w exec google-chrome-stable
 
@@ -136,4 +137,4 @@ exec --no-startup-id gnome-flashback
 exec --no-startup-id ~/.config/polybar/temperature.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id picom -b
-exec --no-startup-id /usr/bin/unclutter -b
+#exec --no-startup-id /usr/bin/unclutter -b
